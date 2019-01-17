@@ -29,7 +29,7 @@
 
     <groupId>io.gravitee.discovery</groupId>
     <artifactId>gravitee-service-discovery-api</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>Gravitee IO - Service Discovery - API</name>
 
