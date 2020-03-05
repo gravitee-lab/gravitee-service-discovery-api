@@ -18,6 +18,10 @@ package io.gravitee.discovery.api.service;
 import java.util.Collections;
 import java.util.Map;
 
+/**
+ * @author David BRASSELY (david.brassely at graviteesource.com)
+ * @author GraviteeSource Team
+ */
 public interface Service {
 
     String id();
