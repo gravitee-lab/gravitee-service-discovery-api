@@ -24,6 +24,10 @@ import java.util.List;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+/**
+ * @author David BRASSELY (david.brassely at graviteesource.com)
+ * @author GraviteeSource Team
+ */
 public abstract class AbstractServiceDiscovery<T extends Service> implements ServiceDiscovery {
 
   private List<T> services = new ArrayList<>();

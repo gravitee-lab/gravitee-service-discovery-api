@@ -18,13 +18,29 @@ package io.gravitee.discovery.api.service;
 import java.util.Collections;
 import java.util.Map;
 
+/**
+ * @author David BRASSELY (david.brassely at graviteesource.com)
+ * @author GraviteeSource Team
+ */
 public interface Service {
+
+    String HTTP_SCHEME = "http";
+    String HTTPS_SCHEME = "https";
+    String DEFAULT_BASE_PATH = "/";
 
     String id();
 
     String host();
 
     int port();
+
+    default String scheme() {
+        return HTTP_SCHEME;
+    }
+
+    default String basePath() {
+        return DEFAULT_BASE_PATH;
+    }
 
     default Map<String, Object> metadata() {
         return Collections.emptyMap();
